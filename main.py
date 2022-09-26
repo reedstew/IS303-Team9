@@ -1,6 +1,3 @@
 # Reed Stewart
 # Colin Gubler
-
-
-
-# Benjamin Clements
+# Stephanie Pesce
