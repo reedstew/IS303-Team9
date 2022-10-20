@@ -1,4 +1,4 @@
-# Authors: Reed Stewart, (type name in here when finished)
+# Authors: Reed Stewart, Perla Valdovinos, Stephanie Pesce
 # Decription: This program will give the list of customers and how many hamburgers they ordered
 
 import random
@@ -24,45 +24,30 @@ print(burger_count)
 
 
 
-# Create a Person class - PERLA
+# Create a Person class - Perla 
 # Create a constructor that defines an instance variable called customer_name
 # Create a method called randomName() that contains a list of 9 names:
-#         asCustomers = ["Jefe", "El Guapo", "Lucky Day", "Ned Nederlander", "Dusty Bottoms", "Harry Flugleman", "Carmen", "Invisible Swordsman", "Singing Bush"]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+class Person():
+    def __init__(self): 
+        self.customer_name = ""
+        self.randomName() 
 
 
 # This method randomly returns one of the 9 names when called  - STEPHANIE
 # The Person constructor should call the randomName() method and assign the return value (a random name) to the customer_name instance variable
+
+    def randomName(self):
+        asCustomers = ["Jefe", "El Guapo", "Lucky Day", "Ned Nederlander", "Dusty Bottoms", "Harry Flugleman", "Carmen", "Invisible Swordsman", "Singing Bush"]
+        self.customer_name = random.choice(asCustomers)
+
 # Create a Customer class that inherits from the Person class
 # Create a constructor that calls the parent constructor
 # Create an instance variable called order in the constructor that is assigned an order object
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+class Customer (Person):
+    def __init__(self):
+        super(). __init__()
+        self.order = Order()
 
 
 
@@ -75,10 +60,6 @@ numCustomers = int(input("How many customers are there? "))
 for numCustomers in range (0, len(numCustomers)):
     customerQueue.append(Customer.customerName())
     
-
-
-
-
 
 
 
