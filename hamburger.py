@@ -55,15 +55,15 @@ class Customer (Person):
 # This variable will represent your line of customers (objects) waiting outside to place their hamburger orders
 customerQueue = []
 
+iCount = 1
+
 numCustomers = int(input("How many customers are there? "))
 
-for numCustomers in range (0, len(numCustomers)):
-    customerQueue.append(Customer.customerName())
-    
+for numCustomers in range (0, numCustomers):
+    customerQueue.append(Customer.randomName(super))
+    iCount = iCount + 1
 
-
-
-
+print(customerQueue)
 
 
 
