@@ -68,13 +68,13 @@ print(burger_count)
 
 # Create a variable for a Queue that will be assigned items of type Customer  - EVAN
 # This variable will represent your line of customers (objects) waiting outside to place their hamburger orders
+customerQueue = []
 
+numCustomers = int(input("How many customers are there? "))
 
-
-
-
-
-
+for numCustomers in range (0, len(numCustomers)):
+    customerQueue.append(Customer.customerName())
+    
 
 
 
