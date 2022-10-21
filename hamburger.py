@@ -1,4 +1,4 @@
-# Authors: Reed Stewart, Perla Valdovinos, Stephanie Pesce
+# Authors: Reed Stewart, Perla Valdovinos, Stephanie Pesce, Benjamin Clements
 # Decription: This program will give the list of customers and how many hamburgers they ordered
 
 import random
