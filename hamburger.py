@@ -1,4 +1,4 @@
-# Authors: Reed Stewart, Perla Valdovinos, Stephanie Pesce
+# Authors: Reed Stewart, Perla Valdovinos, Stephanie Pesce, Evan Carter
 # Decription: This program will give the list of customers and how many hamburgers they ordered
 
 import random
@@ -39,7 +39,7 @@ class Person():
 
     def randomName(self):
         asCustomers = ["Jefe", "El Guapo", "Lucky Day", "Ned Nederlander", "Dusty Bottoms", "Harry Flugleman", "Carmen", "Invisible Swordsman", "Singing Bush"]
-        self.customer_name = random.choice(asCustomers)
+        return random.choice(asCustomers)
 
 # Create a Customer class that inherits from the Person class
 # Create a constructor that calls the parent constructor
@@ -53,9 +53,17 @@ class Customer (Person):
 
 # Create a variable for a Queue that will be assigned items of type Customer  - EVAN
 # This variable will represent your line of customers (objects) waiting outside to place their hamburger orders
+<<<<<<< HEAD
+hamburgerQueue = []
+=======
 customerQueue = []
+>>>>>>> 12d9c980ef94d5924871b3aae6cea61f6f3be925
 
+<<<<<<< HEAD
+for i in range 
+=======
 iCount = 1
+>>>>>>> 12d9c980ef94d5924871b3aae6cea61f6f3be925
 
 numCustomers = int(input("How many customers are there? "))
 
@@ -68,6 +76,18 @@ print(customerQueue)
 
 
 
+<<<<<<< HEAD
+
+
+
+
+
+
+
+
+
+=======
+>>>>>>> 12d9c980ef94d5924871b3aae6cea61f6f3be925
 # Create a variable for a Dictionary with keys of type string and values of type int.  - BENJAMIN
 # This variable will hold information about each customer
 
