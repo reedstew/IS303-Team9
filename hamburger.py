@@ -53,9 +53,9 @@ class Customer (Person):
 
 # Create a variable for a Queue that will be assigned items of type Customer  - EVAN
 # This variable will represent your line of customers (objects) waiting outside to place their hamburger orders
-hamburgerQueue = []
+customerQueue = []
 
-for i in range 
+iCount = 1
 
 numCustomers = int(input("How many customers are there? "))
 
@@ -80,6 +80,11 @@ print(customerQueue)
 # Create a variable for a Dictionary with keys of type string and values of type int.  - BENJAMIN
 # This variable will hold information about each customer
 
+customerDictionary = {
+customerQueue[0] : burger_count,
+}
+
+print(customerDictionary)
 
 
 
