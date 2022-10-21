@@ -39,7 +39,7 @@ class Person():
 
     def randomName(self):
         asCustomers = ["Jefe", "El Guapo", "Lucky Day", "Ned Nederlander", "Dusty Bottoms", "Harry Flugleman", "Carmen", "Invisible Swordsman", "Singing Bush"]
-        self.customer_name = random.choice(asCustomers)
+        return random.choice(asCustomers)
 
 # Create a Customer class that inherits from the Person class
 # Create a constructor that calls the parent constructor
@@ -53,9 +53,9 @@ class Customer (Person):
 
 # Create a variable for a Queue that will be assigned items of type Customer  - EVAN
 # This variable will represent your line of customers (objects) waiting outside to place their hamburger orders
-customerQueue = []
+hamburgerQueue = []
 
-iCount = 1
+for i in range 
 
 numCustomers = int(input("How many customers are there? "))
 
@@ -64,6 +64,15 @@ for numCustomers in range (0, numCustomers):
     iCount = iCount + 1
 
 print(customerQueue)
+
+
+
+
+
+
+
+
+
 
 
 
