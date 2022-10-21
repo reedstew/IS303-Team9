@@ -30,7 +30,7 @@ print(burger_count)
     
 class Person():
     def __init__(self): 
-        self.customer_name = ""
+        self.customer_name = self.randomName()
         self.randomName() 
 
 
@@ -85,6 +85,12 @@ customerQueue[0] : burger_count,
 }
 
 print(customerDictionary)
+
+
+# customerDictionary = {
+# "customerName" : "number of burgers eaten",
+
+# }
 
 
 
