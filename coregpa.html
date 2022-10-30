@@ -40,10 +40,30 @@
         <input type="number" id="overallGPA"></input>
         <br />
         <!--tag for last 30 credits GPA below (Evan)-->
-
+        <label for="last30GPA">
+            What is the GPA for your last 30 credits? (e.g. 3.9)
+        </label>
+        <input type="number" id="last30GPA"></input>
+        <br />
 
         <!--tag for ACC 200 below (Perla)-->
-
+        <label for="ACC200Grade">What was your ACC 200 grade?</label>
+        <select id="ACC200Grade" name="ACC200Grade">
+            <option value=4.0>A</option>
+            <option value=3.7>A-</option>
+            <option value=3.4>B+</option>
+            <option value=3.0>B</option>
+            <option value=2.7>B-</option>
+            <option value=2.4>C+</option>
+            <option value=2.0>C</option>
+            <option value=1.7>C-</option>
+            <option value=1.4>D+</option>
+            <option value=1.0>D</option>
+            <option value=0.7>D-</option>
+            <option value=0.0>E</option>
+        </select>
+        <br>
+        <!--ta
 
         <!--tag for IS 201 below (Colin)-->
         
@@ -64,10 +84,34 @@
         </select>
         <br>
         <!--tag for IS 303 below (Stephanie)-->
-
+        <label for="is301Grade">What was your IS 303 grade?</label>
+        <select id="is301Grade" name="is301Grade">
+            <option value=4.0>A</option>
+            <option value=3.7>A-</option>
+            <option value=3.4>B+</option>
+            <option value=3.0>B</option>
+            <option value=2.7>B-</option>
+            <option value=2.4>C+</option>
+            <option value=2.0>C</option>
+            <option value=1.7>C-</option>
+            <option value=1.4>D+</option>
+            <option value=1.0>D</option>
+            <option value=0.7>D-</option>
+            <option value=0.0>E</option>
+        </select>
+        <br>
+        <!--ta
 
         <!--tag for essay score below (Ben)-->
-
+        <label for="essay">What was your essay score?</label>
+        <select id="essay" name="essay">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+        </select>
+        <br>
 
         <br>
         <button type="button" onclick="calcGPA()">Calculate GPA</button>
