@@ -4,4 +4,4 @@ from django.shortcuts import render, HttpResponse
 
 
 def indexPageView(request):
-    return render(request, 'template/index.html')
+    return render(request, 'traffickingapp/index.html')
