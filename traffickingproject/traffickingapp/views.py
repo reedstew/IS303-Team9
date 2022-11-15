@@ -4,4 +4,4 @@ from django.shortcuts import render, HttpResponse
 
 
 def indexPageView(request):
-    return HttpResponse('Human Trafficking in Utah')
+    return render(request, 'template/index.html')
