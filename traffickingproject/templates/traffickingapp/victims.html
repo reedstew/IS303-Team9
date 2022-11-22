@@ -75,7 +75,19 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                {% for person in people %}
                                 <tr>
+                                <td>{{person.date_missing}}</td>
+                                <td>{{person.last_name}}</td>
+                                <td>{{person.first_name}}</td>
+                                <td>{{person.age_at_missing}}</td>
+                                <td>{{person.city}}</td>
+                                <td>{{person.state}}</td>
+                                <td>{{person.gender}}</td>
+                                <td>{{person.race}}</td>
+                                </tr>   
+                                {% endfor %}
+                                {% comment %} <tr> 
                                 <td>10/30/2009</td>
                                 <td>Sharmarice</td>
                                 <td>Halima</td>
@@ -234,7 +246,7 @@
                                 <td>UT</td>
                                 <td>M</td>
                                 <td>M</td>
-                                </tr>
+                                </tr> {% endcomment %}
                             </tbody>
                             </table>
                         </div>

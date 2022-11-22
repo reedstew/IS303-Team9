@@ -13,7 +13,7 @@ class Person(models.Model):
     race = models.CharField(max_length=1)
 
     def __str__(self):
-        return self.title
+        return self.first_name
 
     class Meta:
         db_table = "people"
