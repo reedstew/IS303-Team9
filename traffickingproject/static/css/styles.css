@@ -322,7 +322,9 @@ thead,
 tbody,
 tfoot,
 tr,
-td,
+td {
+  text-align: center; font-size: 5px;
+}
 th {
   border-color: inherit;
   border-style: solid;
