@@ -1,314 +1,194 @@
-<!--Authors: Reed Stewart, Colin Gubler, Stephanie Del-Pesce, Evan Carter, Benjamin Clements, Perla Valdovinos-->
-<!--Description: This website currently only runs the index landing page, but will include more. It's make prupose is to encourage eduation and action against human trafficking in the BYU community-->
-
 <!DOCTYPE html>
+
+{% load static %}
+
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      body {background-color: powderblue;}
-      h1   {color: blue;}
-      p    {padding:5px;}
-      div  {padding:5px;}
-      td   {text-align: center; font size: 5px;}
-      </style>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <title>Utah Trafficking</title>
-  </head>
-
-  <body>
-    <div>
-    <img src="https://dps.mo.gov/human-trafficking/img/human-trafficking-banner.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Stop Human Trafficking in Missouri - Department of Public Safety" data-noaft="1" style="width: 100%; height: 200px;">
-    </div>
-    <h1 align="center">Welcome to the BYU Anti-Trafficking Info Page</h1>
-    <!--Info from Evan-->
-
-
-    <!--Reed stuff-->
-    <br>
-    <br>
-    <h3 class="display-6">Have you heard these myths? Click on each to find out the truth:</h3>
-    <div class="mx-auto">
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingOne">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            Myth #1: Human trafficking does not occur in the United States. It only happens in other countries.          </button>
-        </h2>
-        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Fact: Human trafficking exists in every country, including the United States. It exists nationwide–in cities, suburbs, and rural towns–and probably in your own community.</div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-            Myth #2: Human trafficking victims are only foreign-born individuals and those who are poor.
-          </button>
-        </h2>
-        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Fact: Human trafficking victims can be any age, race, gender, or nationality: young children, teenagers, women, men, runaways, United States citizens, and foreign-born individuals.</div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-            Myth #3: Human trafficking is only sex trafficking.
-          </button>
-        </h2>
-        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Fact: You may have heard about sex trafficking, but forced labor is also a significant and prevalent type of human trafficking. Victims are found in legitimate and illegitimate labor industries, including sweatshops, massage parlors, agriculture, restaurants, hotels, and domestic service. Note that sex trafficking and forced labor are both forms of human trafficking, involving the exploitation of a person.</div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingFour">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-            Myth #4: Individuals must be forced or coerced into commercial sex acts to be a victim of human trafficking.
-        </h2>
-        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Fact: According to U.S. federal law, any minor under the age of 18 who is induced to perform commercial sex acts is a victim of human trafficking, regardless of whether he or she is forced or coerced.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingFive">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-            Myth #5: Human trafficking and human smuggling are the same.
-          </button>
-        </h2>
-        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Fact: Human trafficking is not the same as smuggling. “Trafficking” is exploitation-based and does not require movement across borders. “Smuggling” is movement-based and involves moving a person across a country’s border with that person’s consent, in violation of immigration laws.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingSix">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-            Myth #6: All human trafficking victims attempt to seek help when in public.
-          </button>
-        </h2>
-        <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Fact: Human trafficking is often a hidden crime. Victims may be afraid to come forward and get help; they may be forced or coerced through threats or violence; they may fear retribution from traffickers, including danger to their families; and they may not be in possession or have control of the identification documents.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <br>
-  <br>
-  <div>
-    <!--Info from Benjamin-->
-    <p class="display-6" style="font-size:200%"> Want to know how to recognize human trafficking? Watch the video below for more information. </p>
-    <h5>PSA: LEARN the signs of HUMAN TRAFFICKING</h2>
-  </div>
-    <div>
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/TQFQqU3O9GM"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
-    </div>
-    <br>
-    <br>
-  <div>
-    <div class='tableauPlaceholder' id='viz1668577426866' style='position: relative'><noscript><a href='#'><img alt='Painel 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tr&#47;TraffickingData&#47;Painel1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TraffickingData&#47;Painel1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tr&#47;TraffickingData&#47;Painel1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1668577426866');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-  </div>
-  <div>
-    <h3 class="display-6"> Help the efforts!</h3>
-    <h6> Over 50% of identified girl victims are aged between 15 and 17 while about 40% of trafficked boys are under 12 years of age. Although every person, no matter age, it important, this project will only use those statistics for providing JSON data Missing Persons Cases Found ages 0 to 27 in the state of Utah.</h6>
-    <br>
-    <h4> The table below shows information for current missing persons in Utah age 0 to 27.</h4>
-  </div>
-    <table class="table table-bordered table-hover table-condensed" style="font-size:100%">
-      <thead>
-        <tr class="text-center">
-          <th title="Field #1">Date Missing</th>
-          <th title="Field #2">Last Name</th>
-          <th title="Field #3">First Name</th>
-          <th title="Field #4">Age at Missing</th>
-          <th title="Field #5">City</th>
-          <th title="Field #6">State</th>
-          <th title="Field #7">Gender</th>
-          <th title="Field #8">Race</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>10/30/2009</td>
-          <td>Sharmarice</td>
-          <td>Halima</td>
-          <td>14</td>
-          <td>Granger</td>
-          <td>UT</td>
-          <td>F</td>
-          <td>W</td>
-        </tr>
-        <tr>
-          <td>10/16/2015</td>
-          <td>Martinez</td>
-          <td>Kimberly</td>
-          <td>16</td>
-          <td>West Valley City</td>
-          <td>UT</td>
-          <td>F</td>
-          <td>M</td>
-        </tr>
-        <tr>
-          <td>07/23/2004</td>
-          <td>Gomez</td>
-          <td>Brenda</td>
-          <td>3</td>
-          <td>Logan</td>
-          <td>UT</td>
-          <td>F</td>
-          <td>H</td>
-        </tr>
-        <tr>
-          <td>05/25/2003</td>
-          <td>Bishop</td>
-          <td>Acacia</td>
-          <td>1</td>
-          <td>Salt Lake City</td>
-          <td>UT</td>
-          <td>F</td>
-          <td>W</td>
-        </tr>
-        <tr>
-          <td>08/03/2020</td>
-          <td>Salazar</td>
-          <td>Maria</td>
-          <td>14</td>
-          <td>Snowville</td>
-          <td>UT</td>
-          <td>F</td>
-          <td>H</td>
-        </tr>
-        <tr>
-          <td>04/09/2020</td>
-          <td>Hernandez-Soto</td>
-          <td>Peggy</td>
-          <td>6</td>
-          <td>Ogden</td>
-          <td>UT</td>
-          <td>F</td>
-          <td>H</td>
-        </tr>
-        <tr>
-          <td>06/24/2021</td>
-          <td>Jimenez</td>
-          <td>Lucero</td>
-          <td>14</td>
-          <td>West Valley City</td>
-          <td>UT</td>
-          <td>F</td>
-          <td>H</td>
-        </tr>
-        <tr>
-          <td>11/08/2013</td>
-          <td>Colindres-Avila</td>
-          <td>Yuris</td>
-          <td>17</td>
-          <td>West Valley City</td>
-          <td>UT</td>
-          <td>F</td>
-          <td>M</td>
-        </tr>
-        <tr>
-          <td>07/15/2021</td>
-          <td>Harris</td>
-          <td>Kandis</td>
-          <td>16</td>
-          <td>Salt Lake City</td>
-          <td>UT</td>
-          <td>F</td>
-          <td>W</td>
-        </tr>
-        <tr>
-          <td>07/30/2006</td>
-          <td>Seal</td>
-          <td>Jaydan</td>
-          <td>1</td>
-          <td>Garleys Wash</td>
-          <td>UT</td>
-          <td>M</td>
-          <td>W</td>
-        </tr>
-        <tr>
-          <td>06/13/2018</td>
-          <td>Lizarraga</td>
-          <td>Jose</td>
-          <td>13</td>
-          <td>West Valley City</td>
-          <td>UT</td>
-          <td>M</td>
-          <td>H</td>
-        </tr>
-        <tr>
-          <td>04/23/2020</td>
-          <td>Cortez Trujillo</td>
-          <td>Eztli</td>
-          <td>21</td>
-          <td>North Ogden</td>
-          <td>UT</td>
-          <td>M</td>
-          <td>H</td>
-        </tr>
-        <tr>
-          <td>10/25/2017</td>
-          <td>Fowles</td>
-          <td>Juan</td>
-          <td>15</td>
-          <td>Lehi</td>
-          <td>UT</td>
-          <td>M</td>
-          <td>M</td>
-        </tr>
-        <tr>
-          <td>08/20/2012</td>
-          <td>Garcia</td>
-          <td>Isai</td>
-          <td>17</td>
-          <td>West Valley City</td>
-          <td>UT</td>
-          <td>M</td>
-          <td>M</td>
-        </tr>
-        <tr>
-          <td>09/01/2015</td>
-          <td>Smith</td>
-          <td>Macin</td>
-          <td>17</td>
-          <td>St. George</td>
-          <td>UT</td>
-          <td>M</td>
-          <td>W</td>
-        </tr>
-        <tr>
-          <td>01/26/2006</td>
-          <td>Sisco-Ramirez</td>
-          <td>Jose</td>
-          <td>4</td>
-          <td>West Valley City</td>
-          <td>UT</td>
-          <td>M</td>
-          <td>M</td>
-        </tr>
-      </tbody>
-    </table>
-    <!--Reed input-->
-    <a href=https://www.facebook.com/byuantihumantrafficking/>Join BYU's AHTC Here</a>
-
+    <!--
+            author: perla valdovinos and team (EVERYONE PUT YOUR NAME HERE)
+            description: group sex missing persons page
+        -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Utah Human Trafficking</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{% static 'images/favicon.ico' %}"
+    />
+    <!-- Font Awesome icons (free version)-->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="{% static '/css/styles.css' %}" />
+  </head>
+  <body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+      <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="{% url 'index' %}">Human Trafficking</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'index' %}"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link px-lg-3 py-3 py-lg-4"
+                href="{% url 'victims' %}"
+                >Victims</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'help' %}"
+                >How to Help</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Page Header-->
+    <header
+      class="masthead"
+      style="background-image: url('{% static "images/WelcomeUtah.jpg"%}')";>
+      <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-7">
+            <div class="site-heading">
+              <h1>Human Trafficking</h1>
+              <span class="subheading"
+                >Taking action on Utah's human trafficking problem</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main Content-->
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+          <!-- What is human trafficking -->
+          <div class="post-human">
+            <a>
+              <h2 class="post-title">What is Human Trafficking?</h2>
+            </a>
+            <p>
+              A type of modern-day slavery. Where a victim gets forced, tricked,
+              or groomed into forced labor, domestic servitude, or sex
+              trafficking. Anyone can be a victim of human trafficking, but some
+              people are more vulnerable. Women, runaway and homeless youth,
+              undocumented immigrants, and individuals who identify as LGBTQ are
+              more at risk. Human trafficking is a local and global problem.
+              Lots of people are being moved and trafficked in the United
+              States, some people are being trafficked and circled in their
+              hometowns
+            </p>
+          </div>
+
+          <!-- Utah's Human trafficking -->
+          <div class="post-utah">
+            <h2 class="post-title">What is happening in Utah?</h2>
+            <div style="text-align: center">
+              <img
+                src="{% static 'images/hereHT.jpg' %}"
+                class="center"
+                height="300"
+                alt="Man holding a poster saying human trafficking happens here"
+              />
+            </div>
+            <p>
+              There are many cases in Utah, some recent ones that were caught
+              were commercial sex, multi-state prostitution rings, illicit
+              massage businesses, labor trafficking in the agricultural sectors,
+              and much more. Utah connects with many states making it possible
+              for thousands of victims to be moved through the state.
+            </p>
+          </div>
+
+          <!-- Utah Statistics-->
+          <div class="post-stats">
+            <a>
+              <h2 class="post-title">Utah Statistics</h2>
+            </a>
+            <p>
+              Based on the human trafficking hotline in 2020 they received 182
+              calls from Utah, with 64 human trafficking cases reported. In 2016
+              they received 156 calls and 105 cases were reported. 72 of those
+              victims were adults and 26 were minors. 88 of them were female, 21
+              of them were male, and 1 of them was a gender minority. 37 of them
+              were legal in the United States, while 27 were foreign nationals.
+            </p>
+            <div>
+              They also found that the top 5 sex trafficking venues were:
+            </div>
+            <ol>
+              <li>Online ads</li>
+              <li>Residental Brothels</li>
+              <li>Pornography</li>
+              <li>Hotel/Motel based</li>
+              <li>Truck Stop based</li>
+            </ol>
+            <br />
+            <div>The top 3 labor trafficking venues were:</div>
+            <ol>
+              <li>Traveling Sales Crew</li>
+              <li>Domestic Work</li>
+              <li>Forest/Reforestation</li>
+            </ol>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer-->
+    <footer class="border-top">
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-7">
+            <div class="small text-center text-muted fst-italic">
+              End Human Trafficking 2022
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
   </body>
 </html>

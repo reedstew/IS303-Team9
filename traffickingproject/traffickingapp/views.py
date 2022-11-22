@@ -5,3 +5,11 @@ from django.shortcuts import render, HttpResponse
 
 def indexPageView(request):
     return render(request, 'traffickingapp/index.html')
+
+
+def victimsPageView(request):
+    return render(request, 'traffickingapp/victims.html')
+
+
+def helpPageView(request):
+    return render(request, 'traffickingapp/help.html')

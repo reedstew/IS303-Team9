@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>How to Help</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="{% static '/css/styles.css' %}" />
+  </head>
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="{% url 'index' %}">Human Trafficking</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'index' %}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'victims' %}">Victims</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'help' %}">How to Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('{% static "images/help.jpg"%}')";>
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>How to help</h1>
+                            <span class="subheading">Ways to help Utah's victims and survivors of human trafficking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <h2 class="section-heading">Know the Signs</h2>
+                        <p>There are multiple signs to watch out for to be able to identify human trafficking, some of those are (higher list visit <a href="https://humantraffickinghotline.org/human-trafficking/recognizing-signs">humantraffickinghotline.org</a>):</p>
+                        <ol>
+                            <ul>
+                                <li>Someone you know is offered a job opportunity that seems too good to be true</li>
+                                <li>Someone you know is recruited for an opportunity that requires them to move far away, but their recruiter or prospective employer avoids answering their questions or is reluctant to provide detailed information about the job</li>
+                                <li>A potential employer refuses to give workers a signed contract or asks them to sign a contract in a language they do not understand</li>
+                                <li>Employees are living where they work or are transported by guards between home and workplace</li>
+                                <li>Employees do not have control of their passport or other identity documents</li>
+                            </ul>
+                        </ol>
+                    
+
+                        <h2 class="section-heading">Who to Contact</h2> <br/>
+                        <a>Call the Human trafficking hotline at <b>888–373–7888</b></a>
+                        <div><ol><i><small> National Hotline serves victims and survivors of human trafficking and the anti-trafficking community across the United States and its territories, 24/7, in more than 200 languages. Contact the confidential hotline to report tips, seek services, ask for help, or receive information and statistics related to human trafficking</small></i></ol></div>
+                        <br/>
+                         
+                        <a>For the local Utah Human trafficking tip line call <b>801–200–3443</b></a>
+                        <div><ol><i><small>This is a 24-hour tip line run by the Utah Attorney General’s office. Call the tip line to report tips about human trafficking. The tip line is answered by a voicemail machine.</small></i></ol></div>
+                        
+
+                        <h2 class="section-heading">Donate</h2>
+                        <p>Help Survivors of human trafficking by donating to Aspen Magdalene House. This house in Salt Lake City will help survivors recover and get back on their feet. Click <a href="https://aspenhouseslc.org/donate/">here</a> to learn more and donate.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        
+                        <div class="small text-center text-muted fst-italic">End Human Trafficking 2022</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

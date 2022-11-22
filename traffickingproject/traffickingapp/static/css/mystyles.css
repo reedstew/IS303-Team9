@@ -1,0 +1,10 @@
+table, thead, td 
+{
+    border: solid 3px rgb(7, 0, 0);
+    border-collapse: collapse;
+    padding: 4px 6px;
+    text-align: center;
+}
+thead {
+    font-weight:bold;
+}
