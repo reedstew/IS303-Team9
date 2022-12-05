@@ -9,6 +9,14 @@ def indexPageView(request):
 
 
 def victimsPageView(request):
+    try: 
+        first_name = request.GET['firstName']
+        
+        people = Person.objects.filter(first_name=first_name) 
+
+    except: 
+        people = Person.objects.all()
+    
     db_people = Person.objects.all()
     context = {
         "people": db_people

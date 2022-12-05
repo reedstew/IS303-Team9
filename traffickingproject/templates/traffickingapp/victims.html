@@ -250,9 +250,52 @@
                             </tbody>
                             </table>
                         </div>
+                        <br> <br> <br> <br>
+                        <div>
+                            <h1> Search for missing persons by name: </h1>
+                            <form method ="get">
+                                <label for= "first_name"> First Name </label>
+                                <input type="text" id="title" name = "first_name">
+                                <button type ="submit" class= "btn btn-primary"> Search </button>
+                            </form>
+                            {% if people|length == 0 %}
+                            <p> No one found </p>
+                            {% else%}
+                            <table class="table table-bordered table-hover table-condensed" style="font-size:100%">
+                                <thead>
+                                    <tr class="text-center">
+                                    <th title="Field #1">Date Missing</th>
+                                    <th title="Field #2">Last Name</th>
+                                    <th title="Field #3">First Name</th>
+                                    <th title="Field #4">Age at Missing</th>
+                                    <th title="Field #5">City</th>
+                                    <th title="Field #6">State</th>
+                                    <th title="Field #7">Gender</th>
+                                    <th title="Field #8">Race</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for person in people %}
+                                    <tr>
+                                    <td>{{person.date_missing}}</td>
+                                    <td>{{person.last_name}}</td>
+                                    <td>{{person.first_name}}</td>
+                                    <td>{{person.age_at_missing}}</td>
+                                    <td>{{person.city}}</td>
+                                    <td>{{person.state}}</td>
+                                    <td>{{person.gender}}</td>
+                                    <td>{{person.race}}</td>
+                                    </tr>   
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                            {% endif %}           
+                        </div>
+                        <br> <br> <br> <br>
                     </div>
                 </div>
-            </div> 
+            </div>
+             
         </main>
         <!-- Footer-->
         <footer class="border-top">
