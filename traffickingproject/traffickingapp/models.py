@@ -18,3 +18,6 @@ class Person(models.Model):
     class Meta:
         db_table = "people"
 
+
+class List(models.Model):
+    people = models.ManyToManyField("Person",blank=True)

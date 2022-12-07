@@ -10,18 +10,22 @@ def indexPageView(request):
 
 def victimsPageView(request):
     try: 
-        first_name = request.GET['firstName']
+        fName = request.GET['first_name']
         
-        people = Person.objects.filter(first_name=first_name) 
+        people = Person.objects.filter(first_name=fName) 
 
     except: 
         people = Person.objects.all()
     
-    db_people = Person.objects.all()
     context = {
-        "people": db_people
+        "people": people
     }
     return render(request, 'traffickingapp/victims.html', context)
+
+# def searchPageView(Request): 
+#     fName = request.GET['first_name'] 
+
+#     return render(request)
 
 
 def helpPageView(request):
