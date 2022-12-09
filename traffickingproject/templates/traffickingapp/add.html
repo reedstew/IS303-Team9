@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Add Person</h1>
+    <form method="post">
+      {% csrf_token %}
+      <label for="date_missing">Date Missing</label>
+      <br />
+      <input type="date" name="date_missing" id="date_missing" />
+      <br /><br />
+
+      <label for="first_name">First Name</label>
+      <br />
+      <textarea name="first_name" id="first_name" rows="1"></textarea>
+      <br /><br />
+
+      <label for="last_name">last Name</label>
+      <br />
+      <textarea name="last_name" id="last_name" rows="1"></textarea>
+      <br /><br />
+
+      <label for="age_at_missing">Age at Missing</label>
+      <br />
+      <textarea name="age_at_missing" id="age_at_missing" rows="1"></textarea>
+      <br /><br />
+
+      <label for="city">City</label>
+      <br />
+      <textarea name="city" id="city" rows="1"></textarea>
+      <br /><br />
+
+      <label for="state">State</label>
+      <br />
+      <textarea name="state" id="state" rows="1"></textarea>
+      <br /><br />
+
+      <label for="gender">Gender</label>
+      <br />
+      <textarea name="gender" id="gender" rows="1"></textarea>
+      <br /><br />
+
+      <label for="race">Race</label>
+      <br />
+      <textarea name="race" id="race" rows="1"></textarea>
+      <br /><br />
+
+      <br /><br />
+      <button type="submit" class="btn btn-primary">Add Book</button>
+    </form>
+  </body>
+</html>

@@ -42,7 +42,7 @@ def addPageView(request):
     if request.method == 'POST':
         # Add in a new person
         # Get first_name, last_name, age_at_missing, city, state, gender, race
-        date_at_missing = request.POST['date_at_missing']
+        date_missing = request.POST['date_missing']
         first_name = request.POST['first_name']
         last_name = request.POST['last_name']
         age_at_missing = request.POST['age_at_missing']
@@ -54,7 +54,7 @@ def addPageView(request):
 
         new_person = Person()
 
-        new_person.date_at_missing = date_at_missing
+        new_person.date_missing = date_missing
         new_person.first_name = first_name
         new_person.last_name = last_name
         new_person.age_at_missing = age_at_missing
